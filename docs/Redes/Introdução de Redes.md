@@ -1,14 +1,14 @@
 ---
 title: Introdução de Redes
-tags: [ redes, OSI, protocolos ]
 ---
+tags: #redes #OSI #protocolos
 
 
 # Introdução de Redes
 
 ---
 
-> [Hebert Silva](mailto:hebert.luiz.hb@gmail.com) @hebertluiz
+> [Hebert Silva](https://site.hev.dev.br) @hebertluiz
 
 ## Modelo OSI
 
