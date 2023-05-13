@@ -1,7 +1,8 @@
 ---
 title: ISDN Codigos de Desconexao
 ---
-tags
+tags: #ISDN  #telecom #notas
+
 # ISUP - (ISDN – User Part)
 
 - 1 - número não alocado 404 não encontrado
