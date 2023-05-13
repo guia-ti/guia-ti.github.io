@@ -1,11 +1,14 @@
-# Obsidian Notes
+# Guia TI 
 
-Publish your public notes with MkDocs
+Nesse site o meu objetivo é organizar todas as minhas notas pessoais da area de TI.
 
-## Hello World!
 
-The `index.md` in the `/docs` folder is the homepage you see here.
+## Formatos
 
-The folders in `/docs` appear as the main sections on the navigation bar.
+A ideia é categorizar as anotações por area técnica e por tipo de nota. 
 
-The notes appear as pages within these sections. For example, [[Note 1]] in `Topic 1`
+### Guias
+
+### Documentação
+
+### Notas

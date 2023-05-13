@@ -1,0 +1,20 @@
+#!/bin/bash
+
+infile="$*"
+if [ -n "$infile" ]
+then
+    if [ -f "$infile" -a -r $infile ]  
+    then
+        sed -e 's/[,;]\([,;]\)/ \1/g;' "$infile" | tr -d \"\'\` | column -t -s\;, |less 
+        
+    else 
+        printf -- "ERROR: File does not exists or isn't readable.\n\t%s\n\n" "$infile"
+        exit 1 # File not found ERROR 1
+    fi 
+else 
+    printf -- "No input file specified\n\tPlease inform an input file:\n" 
+    printf -- "\t\tEx.: %s <PATH_TO_FILE>\n\n" "$0"
+    exit 2
+fi
+
+exit 0
