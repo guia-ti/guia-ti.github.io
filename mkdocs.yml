@@ -1,4 +1,4 @@
-site_name: obsidian-mkdocs template
+site_name: Guia TI
 
 theme:
     name: 'material'
@@ -7,20 +7,20 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: pink
-      accent: indigo
+      primary: blue grey
+      accent: deep orange
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
+        icon: material/weather-night
+        name: Mudar para modo escuro
 
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: pink
-      accent: blue
+      primary: teal
+      accent: purple
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+        icon: material/weather-sunny
+        name: Mudar para modo Claro
 
 # Extensions
 markdown_extensions:
