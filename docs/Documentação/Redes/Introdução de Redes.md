@@ -1,5 +1,7 @@
 ---
 title: Introdução de Redes
+created: 2023-05-14T20:09:19-03:00
+updated: 2023-05-14T20:41:56-03:00
 ---
 tags: #redes #OSI #protocolos
 
@@ -48,9 +50,11 @@ Aqui é onde a mágica acontece, nessa camada temos a implementação do endere�
 
 Aqui temos os dois protocolos mais comuns de comunicação UDP e TCP. Esta camada age como interface entre as camadas de 1 a 3 onde a preocupação é a maneira em que os dados são transmitidos e as camadas 5 a 7 onde a preocupação é com os dados contidos nos pacotes endereçando-os as aplicações corretas. Temos também a divisão da sessão em pacotes 
 
-* #### `UDP`: Neste protocolo não temos controle sobre o recebimento e envio dos pacotes, de forma bem simples podemos dizer que não é confiável no sentido de não haver ordenação de pacotes fora de ordem, não há validação de recebimento e não é possível o reenvio de pacotes perdidos.
+#### `UDP`
+  Neste protocolo não temos controle sobre o recebimento e envio dos pacotes, de forma bem simples podemos dizer que não é confiável no sentido de não haver ordenação de pacotes fora de ordem, não há validação de recebimento e não é possível o reenvio de pacotes perdidos.
 
-* #### `TCP`:  Podemos dizer que este é um protocolo confiável. Há o suporte para reordenação de pacotes fora de ordem, temos controle de recebimento com confirmação do recebimento e a possibilidade de reenvio de pacotes perdidos. Neste caso temos garantias maiores de que o pacote enviado ao receptor chegou corretamente e foi processado.
+#### `TCP`
+  Podemos dizer que este é um protocolo confiável. Há o suporte para reordenação de pacotes fora de ordem, temos controle de recebimento com confirmação do recebimento e a possibilidade de reenvio de pacotes perdidos. Neste caso temos garantias maiores de que o pacote enviado ao receptor chegou corretamente e foi processado.
 
 ### 5 - Camada de Sessão 
 
@@ -65,9 +69,9 @@ Atualmente em sistemas TCP/IP, a camada de sessão não existe por si só. Suas 
 
 É nesta camada que fazemos a tradução entre formatos e codificações para transmissão. Como referencia podemos realizar as seguintes ações com os dados nesta camada.
 
-* Compressão
-* Encriptação 
-* Codificação
+- Compressão
+- Encriptação 
+- Codificação
 
 Em resumo, temos aqui a transformação dos dados em um formato que a camada de aplicação possa aceitar evitando interferências por conta de formatos e codificações.
 
@@ -79,12 +83,12 @@ Nesta camada tudo tem relação com o software e pode ser descrito em um protoco
 
 Os protocolos abaixo são alguns dos presentes nessa camada: 
 
-* HTTP
-* SMTP
-* FTP
-* Telnet
-* SIP
-* DNS 
+- HTTP
+- SMTP
+- FTP
+- Telnet
+- SIP
+- DNS 
 
 
 ---
@@ -96,14 +100,14 @@ Com essa base podemos partir para os pontos específicos, os protocolos em si e 
 
 Vamos ver com detalhes os protocolos abaixo:
 
-* Ethernet 
-* IPv4
-* TCP/IP
-* HTTP
-* SIP
+- Ethernet 
+- IPv4
+- TCP/IP
+- HTTP
+- SIP
 
 
 ## Referencias 
 
-* [Windows Network Architecture and the OSI Model - docs.microsoft.com](https://docs.microsoft.com/en-US/windows-hardware/drivers/network/windows-network-architecture-and-the-osi-model)  
-* [Modelo OSI - wikipedia.org](https://pt.wikipedia.org/wiki/Modelo_OSI)
+- [Windows Network Architecture and the OSI Model - docs.microsoft.com](https://docs.microsoft.com/en-US/windows-hardware/drivers/network/windows-network-architecture-and-the-osi-model)  
+- [Modelo OSI - wikipedia.org](https://pt.wikipedia.org/wiki/Modelo_OSI)
