@@ -2,17 +2,17 @@
 
 ---
 
-##  1xx—Respostas Provisórias / Informacionais
+##  1xx—Respostas Provisórias  e Informativas
 Indica o Status de uma chamada antes dela ser completada.
 
 - 100 Trying  
 
-    Indica que o roteador mais próximo do servidor recebeu uma solicitação e alguma ação será tomada em relação a isso.  
+    Indica que o dispositivo mais próximo do servidor recebeu uma solicitação e alguma ação será tomada em relação a isso.  
   
   
 - 180 Ringing  
 
-    Indica que o agente do usuário ( Softphone / ATA / TelefoneIP / Asterisk / Etc ) recebeu uma solicitação e esta alertando o destino. [ Geralmente através de toques / Binadas / Alertas com som / Mensagens. ]  
+    Indica que o agente do usuário ( Softphone, ATA, TelefoneIP, Asterisk, etc .. ) recebeu uma solicitação e esta chamando o destino. Geralmente através de toques, Alertas sonoros, notificaçoes ou mensagens.  
 
 - 181 Call is Being Forwarded  
 
@@ -28,9 +28,10 @@ Indica o Status de uma chamada antes dela ser completada.
 
 - 199 Early Dialog Terminated  
 
-    Pode ser usada pelo Servidor VoIP [ Ex: PBX ] para indicar que o fluxo das entidades SIP ( Incluindo o cliente, agente usuário ) terminou / rescindiu muito cedo.  
+    Pode ser usada pelo Servidor VoIP (Ex: PBX) para indicar que o fluxo das entidades SIP ( Incluindo o cliente, agente usuário ) terminou muito cedo.  
 
-## 2xx—Respostas bem sucedidas [ Indica se uma solicitação foi completada com êxito ]
+## 2xx—Respostas bem sucedidas
+Indica se uma solicitação foi completada com êxito, e qual foi o comportamento gerado.
 
 - 200 OK  
 
@@ -38,7 +39,8 @@ Indica o Status de uma chamada antes dela ser completada.
 
 - 202 Accepted  
 
-    Indica que a solicitação foi aceita para ser processada. Porem o processamento ainda não foi completado. Obsoleto - No momento essa resposta não é mais utilizada nos sistemas mais recentes.
+    Indica que a solicitação foi aceita para ser processada. Porem o processamento ainda não foi completado. _Obsoleto - No momento essa resposta não é mais utilizada nos sistemas mais recentes_.
+
 - 204 No Notification  
 
     Indica que a solicitação teve sucesso, porem a chamada não vai ter uma notificação. [ Ex: Ligou em um 0800, Completou no sistema, dando um OK, porém não vai notificar o Cliente, agente usuário. Sem alertas e notificações. Nada. ]  
