@@ -10,4 +10,4 @@ A estrutura do projeto é baseada no [Obsidian](https://obsidian.md). Com ele é
 Para contribuir com projeto basta realizar um PR com novo conteúdo descrevendo de forma clara a motivação para a mudança.
 
 ## Configuração do Obsidian
-Irei criar um artigo explicando meu ambiente do Obsidian e como replica-lo de forma simples. Para sincronizar meus dados locais utilizo o plugin [Obsidian Git]([denolehov/obsidian-git: Backup your Obsidian.md vault with git (github.com)](https://github.com/denolehov/obsidian-git))
+Irei criar um artigo explicando meu ambiente do Obsidian e como replica-lo de forma simples. Para sincronizar meus dados locais utilizo o plugin [Obsidian Git](https://github.com/denolehov/obsidian-git) de @denolehov e para publicar usei o repositório de template de @jobindjohn [Publish your Obsidian Notes](https://github.com/jobindjohn/obsidian-publish-mkdocs)
