@@ -125,12 +125,12 @@ Informações sobre um novo local do usuário ou destinos alternativos, serviço
 - 410 Gone  
 
     Era uma vez uma informação que vivia aqui, porem não vive mais.
-    A mensagem informa que sabe da existencia informação existiu, porém ela não se encontra mais no local.  
+    A mensagem informa que sabe da existência desta informação, porém ela não se encontra mais disponível.  
 
 - 411 Length Required  
 
-    O servidor não vai aceitar nenhum pedido sem um conteúdo / duração valida.
-    Esta mensagem apareceria creio eu, em casos de Telemarketing por exemplo. Em que os áudios e mensagens enviadas precisam ter sua duração exata especificada.  
+    O servidor não vai aceitar nenhum pedido sem um conteúdo e/ou duração valida.
+    >Esta mensagem apareceriam em casos de Telemarketing por exemplo. Em que os áudios e mensagens enviadas precisam ter sua duração exata especificada.  
 
 - 412 Conditional Request Failed  
 
@@ -146,20 +146,22 @@ Informações sobre um novo local do usuário ou destinos alternativos, serviço
 
 - 415 Unsupported Media Type  
 
-    Corpo da solicitação esta em um formato não suportado. Algum CODEC pode estar faltando. Com o CODEC ideal, este erro pode ser resolvido e a Media passar a ser suportada.  
+    Corpo da solicitação esta em um formato não suportado. Algum CODEC pode estar faltando. 
+    >Com o CODEC correto, este erro pode ser resolvido e a media passar a ser suportada.  
 
 - 416 Unsupported URI Scheme  
 
-    Um erro que ocorre caso a sequencia dos dados / caracteres informados para registro esteja incorreta, ou seja utilizado um texto com uma fonte diferente da interpretada pelo servidor...
-    Pode também aparecer caso uma rota esteja mal configurada, por exemplo, um número entrante esteja em um servidor, porém em uma das pontas, estiver alcançando um Gateway diferente do q deveria... Comum em rotas / números vindo de fora... Internacionais.  
+    Um erro que ocorre caso a sequencia dos dados ou caracteres informados para registro esteja incorreta, ou seja utilizado um texto com codifcação diferente da suportada pelo servidor...
+    > Pode também aparecer caso uma rota esteja mal configurada, por exemplo, um número entrante esteja em um servidor, porém em uma das pontas, estiver alcançando um Gateway diferente do q deveria.  
 
 - 417 Unknown Resource-Priority  
 
-    Teve uma solicitação para dar prioridade a um recurso, porem nao teve um local, um destino para essa opção encaminhar a solicitação.  
+    Há uma solicitação para dar prioridade a um recurso, porem não foi especificado um local ou destino para essa opção encaminhar a solicitação.  
 
 - 420 Bad Extension  
 
-    Protocolo SIP - Servidor não compreendeu extensão usada. Este erro geralmente está relacionado às configurações da rota, em algum dos pontos. 
+    Protocolo SIP - Servidor não compreendeu extensão usada. 
+    >Este erro geralmente está relacionado às configurações da rota, em algum dos pontos. 
 
 - 421 Extension Required  
 
@@ -167,11 +169,13 @@ Informações sobre um novo local do usuário ou destinos alternativos, serviço
 
 - 422 Session Interval Too Small  
 
-    O tempo de expiração contem uma duração abaixo do tempo minimo. Provavelmente este erro vá aparecer em algum esquema de Telemarketing, ou URA Reversa. Não sabemos ao certo. 
+    O tempo de expiração contem uma duração abaixo do tempo mínimo. 
+    >Provavelmente este erro vá aparecer em algum esquema de Telemarketing, ou URA Reversa. Não sabemos ao certo. 
 
 - 423 Interval Too Brief  
 
-    Tempo de expiração do recurso muito curta. Explicação é a mesma do erro 422. Alguma URA ou esquema de Telemarketing. 
+    Tempo de expiração do recurso muito curta. 
+    >Explicação é a mesma do erro 422. Alguma URA ou esquema de Telemarketing. 
 
 - 424 Bad Location Information  
 
@@ -183,7 +187,7 @@ Informações sobre um novo local do usuário ou destinos alternativos, serviço
 
 - 429 Provide Referrer Identity  
 
-    O servidor nao recebeu um token valido no pedido. Este erro deve acontecer se o servidor exigir algum tipo de token de identificação para ser enviada junto com a solicitação... 
+    O servidor não recebeu um token valido no pedido. Este erro deve acontecer se o servidor exigir algum tipo de token de identificação para ser enviada junto com a solicitação... 
 
 - 430 Flow Failed  
 
@@ -195,11 +199,11 @@ Informações sobre um novo local do usuário ou destinos alternativos, serviço
 
 - 436 Bad Identity-Info  
 
-    O pedido possui um cabeçalho de identificação porem o esquema URI do mesmo nao pode ser diferenciado e compreendido. 
+    O pedido possui um cabeçalho de identificação porem o esquema URI do mesmo não pode ser diferenciado e compreendido. 
 
 - 437 Unsupported Certificate  
 
-    O servidor nao pode validar um certificado para o domínio que realizou o pedido. 
+    O servidor não pode validar um certificado para o domínio que realizou o pedido. 
 
 - 438 Invalid Identity Header  
 
@@ -207,11 +211,11 @@ Informações sobre um novo local do usuário ou destinos alternativos, serviço
 
 - 439 First Hop Lacks Outbound Support  
 
-    O proxy de saída que o usuário esta tentando registrar nao suporta a opção de saida do RFC 5626, porem o registrador suporta.  
+    O proxy de saída que o usuário esta tentando registrar não suporta a opção de saida do RFC 5626, porem o registrador suporta.  
 
 - 470 Consent Needed  
 
-    A fonte do pedido não tem permissão para realizar tal pedido. O recipiente em q a fonte se encontra não o autorizou a completar a ação. É necessario q o mesmo autorize.  
+    A fonte do pedido não tem permissão para realizar tal pedido. O recipiente em que a fonte se encontra não o autorizou a completar a ação. É necessário que o mesmo autorize.  
 
 - 480 Temporarily Unavailable  
 
@@ -219,7 +223,7 @@ Informações sobre um novo local do usuário ou destinos alternativos, serviço
 
 - 481 Call/Transaction Does Not Exist  
 
-    O servidor recebeu um pedido porem ele nao bate com nenhum dialogo ou transação.  
+    O servidor recebeu um pedido porem ele não bate com nenhum dialogo ou transação.  
 
 - 482 Loop Detected.  
 
@@ -235,7 +239,8 @@ Informações sobre um novo local do usuário ou destinos alternativos, serviço
 
 - 485 Ambiguous  
 
-    A solicitação URI pode conter vários significados. Provavelmente este erro se resolva caso a URI seja mais específica e com mais parametros...  
+    A solicitação URI pode conter vários significados. 
+    > Provavelmente este erro se resolva caso a URI seja mais específica e com mais parâmetros
 
 - 486 Busy Here  
 
@@ -247,11 +252,13 @@ Informações sobre um novo local do usuário ou destinos alternativos, serviço
 
 - 488 Not Acceptable Here  
 
-    Alguns aspectos da descrição da sessão ou a solicitação URI nao são aceitas.  
+    Alguns aspectos da descrição da sessão ou a solicitação URI não são aceitas.
+    > Ex.: Codecs de mídia não suportados ou incompatibilidade entre cifras de criptografia.
 
 - 489 Bad Event  
 
-    O servidor nao entendeu o pacote de evento informado no cabeçalho de eventos. Um exemplo, caso algum ATA envie uma notificação de algum recurso, tal como o "keep-alive", e o q recebeu esta notificação não compreenda a mesma, pode retornar esta mensagem.  
+    O servidor não pode processar o pacote de evento informado no cabeçalho de eventos. 
+    >  Ex.: Caso algum ATA envie uma notificação de algum recurso, tal como o "keep-alive", e quem recebeu esta notificação não compreenda a mesma, pode retornar esta mensagem.  
 
 - 491 Request Pending  
 
@@ -259,7 +266,7 @@ Informações sobre um novo local do usuário ou destinos alternativos, serviço
 
 - 493 Undecipherable  
 
-    O pedido contem um corpo MIME encriptado no qual o recipiente nao pôde decriptar.   
+    O pedido contem um corpo MIME encriptado no qual o recipiente não pôde decriptar.   
 
 - 494 Security Agreement Required  
 
@@ -269,27 +276,28 @@ Informações sobre um novo local do usuário ou destinos alternativos, serviço
 
 - 500 Server Internal Error  
 
-    O servidor nao pôde completar o pedido por causa de uma condição inesperada.  
+    O servidor não pôde completar o pedido por causa de uma condição inesperada.  
 
 - 501 Not Implemented  
 
-    O servidor nao possui a habilidade de completar o pedido, isso ocorre porque o servidor que realizou tal pedido nao reconhece o método do pedido.  
+    O servidor não possui a habilidade de completar o pedido, isso ocorre porque o servidor que realizou tal pedido não reconhece o método do pedido.  
 
 - 502 Bad Gateway  
 
-    O servidor esta agindo como uma gateway ou proxy e recebeu uma resposta invalida de um servidor - Gateway invalido ou proxy invalido / Defeituoso.  
+    O servidor esta agindo como uma gateway ou proxy e recebeu uma resposta invalida de um servidor 
+    >Gateway invalido, proxy invalido e/ou Defeituoso.  
 
 - 503 Service Unavailable  
 
-    O servidor esta em manutenção ou temporariamente sobrecarregado e nao pode processar o pedido.  
+    O servidor esta em manutenção ou temporariamente sobrecarregado e não pode processar o pedido.  
 
 - 504 Server Time-out  
 
-    O servidor tentou acessar outro servidor porem nao recebeu uma resposta.  
+    O servidor tentou acessar outro servidor porem não recebeu uma resposta.  
 
 - 505 Version Not Supported  
 
-    A versão do protocolo SIP no pedido nao é suportada pela versão do servidor.  
+    A versão do protocolo SIP no pedido não é suportada pela versão do servidor.  
 
 - 513 Message Too Large  
 
@@ -297,7 +305,7 @@ Informações sobre um novo local do usuário ou destinos alternativos, serviço
 
 - 580 Precondition Failure  
 
-    O servidor é incapaz ou nao quer obedecer ou aceitar as condições / restrições especificadas no pedido.  
+    O servidor é incapaz ou não quer obedecer ou aceitar as condições e restrições especificadas no pedido.  
 
 ## 6xx—Respostas de Falhas Globais.
   
@@ -308,15 +316,16 @@ Informações sobre um novo local do usuário ou destinos alternativos, serviço
 
 - 603 Decline  
 
-    O destino nao deseja participar da chamada ou não pode aceita-la. Adicionalmente o destino também sabe que nao existem outros destinos alternativos - Como por exemplo uma caixa postal.  
+    O destino não deseja participar da chamada ou não pode aceita-la. 
+    > Adicionalmente o destino também sabe que não existem outros destinos alternativos como ,por exemplo, uma caixa postal.  
 
 - 604 Does Not Exist Anywhere  
 
-    O servidor possui a informação de que o solicitado nao existe em lugar algum.  
+    O servidor possui a informação de que o destino solicitado não existe em lugar algum.  
 
 - 606 Not Acceptable  
 
-    O agente do usuário contactou com sucesso porem alguns aspectos da descrição da sessão, como por ex. a media requisita, velocidade da internet, ou o estilo em que o endereço foi digitado, nao são aceitas.  
+    O agente do usuário contactou com sucesso porem alguns aspectos da descrição da sessão, como por ex. a media requisita, velocidade da internet, ou o estilo em que o endereço foi digitado, não são aceitas.  
 
 --- 
 
