@@ -39,80 +39,93 @@ Indica se uma solicitação foi completada com êxito, e qual foi o comportament
 
 - 202 Accepted  
 
-    Indica que a solicitação foi aceita para ser processada. Porem o processamento ainda não foi completado. _Obsoleto - No momento essa resposta não é mais utilizada nos sistemas mais recentes_.
+    Indica que a solicitação foi aceita para ser processada. Porem o processamento ainda não foi completado. 
+    >_Obsoleto - No momento essa resposta não é mais utilizada nos sistemas mais recentes_.
 
 - 204 No Notification  
 
-    Indica que a solicitação teve sucesso, porem a chamada não vai ter uma notificação. [ Ex: Ligou em um 0800, Completou no sistema, dando um OK, porém não vai notificar o Cliente, agente usuário. Sem alertas e notificações. Nada. ]  
+    Indica que a solicitação teve sucesso, porem a chamada não vai ter uma notificação.
+    >Ex: Ligou em um 0800, Completou no sistema, dando um OK, porém não vai notificar o Cliente, agente ou usuário. Sem alertas e notificações.  
 
-## 3xx—Respostas de redirecionamento. [ Informações sobre um novo local do usuário ou destinos alternativos / serviços alternativos que possam cumprir a chamada ]
+## 3xx—Respostas de redirecionamento. 
+Informações sobre um novo local do usuário ou destinos alternativos, serviços alternativos que possam prosseguir com a sessão.
 
 - 300 Multiple Choices  
 
-    O endereço / IP / Chamada foi redirecionado a varias opções para o usuário ou cliente escolher, cada uma indo para um local diferente, enquanto o usuário ou agente do usuário pode selecionar a opção desejada e redirecionar a solicitação de chamada até esse local. Talvez esta mensagem apareça em alguns casos de URA, por Exemplo.  
+    O endereço IP ou chamada foi redirecionado a varias opções para o usuário ou cliente escolher, cada uma indo para um local diferente, enquanto o usuário ou agente do usuário pode selecionar a opção desejada e redirecionar a solicitação de chamada até esse local. 
+    > Talvez esta mensagem apareça em alguns casos de URA, por Exemplo.  
 
 - 301 Moved Permanently  
 
-    O usuário não pode mais ser encontrado no endereço em que foi mandada a solicitação / chamada.  
+    O usuário não pode mais ser encontrado no endereço em que foi mandada a solicitação ou chamada.  
 
-- 302 Moved Temporarily-  
+- 302 Moved Temporarily  
 
     O usuário não pode completar a chamada porque o endereço solicitado esta temporariamente desabilitado, fora de serviço ou expirou.  
-    
+    > Pode haver informação adicional de um novo destino de contato.
+
 - 305 Use Proxy  
 
     A fonte solicitada só pode ser alcançada através de um Proxy.
+
 - 380 Alternative Service  
 
     A chamada falhou, porem alternativas para esse endereço estão sendo mostrados no corpo da mensagem.  
 
-## 4xx—Respostas de falha / erros no cliente
+## 4xx—Respostas de falha ou erros no cliente
 
 - 400 Bad Request  
 
-    A solicitação não pode ser compreendida devido a uma sintaxe errada. [ Numero digitado errado, cadastro errado, registro errado, ou a operadora - GVT, Net Virtua, etc - ter algum tipo de bloqueio, ou até mesmo um erro interno na rede do cliente. ]  
+    A solicitação não pode ser compreendida devido a uma sintaxe errada. 
+    > Numero digitado errado, cadastro errado, registro errado, ou a operadora - GVT, Net Virtua, etc - ter algum tipo de bloqueio, ou até mesmo um erro interno na rede do cliente. 
 
 - 401 Unauthorized  
 
     O pedido não pode ser completado pois não foi possível autenticar o usuário.  
 
-- 402 Payment Required-  
+- 402 Payment Required
 
-    Mensagem informada por uma operadora VOIP ( Terminação ) quando a rota fica sem saldo... Caso esta mensagem apareça, entre em contato com sua operadora.  
+    Mensagem informada por uma operadora VOIP ( Terminação ) quando a rota fica sem saldo.
+    >Caso esta mensagem apareça, será necessário contato com a operadora.  
 
 - 403 Forbidden  
 
-    O servidor compreendeu a solicitação, porem esta se negando a completar / aceitar.
-    Muitas vezes este erro ocorre em alguma das pontas devido à uma configuração errada de uma rota de saída, ou uma rota de entrada. Ou algum tipo de bloqueio em uma das pontas.  
+    O servidor compreendeu a solicitação, porem esta se negando a completar ou aceita-la.
+    >Muitas vezes este erro ocorre em alguma das pontas devido à uma configuração errada de uma rota de saída, ou uma rota de entrada. Ou algum tipo de bloqueio em uma das pontas.  
 
 - 404 Not Found  
 
-    O servidor viu que o usuário solicitado especificado não existe no domínio alcançado. Essa resposta também aparece caso alguma informação, como o domínio, ou mesmo um número de entrada, não seja igual ao especificado no servidor, no destino ou na ponta que fez a solicitação.  
+    O servidor reporta que o usuário solicitado não existe no domínio de destino. 
+    >Essa resposta também aparece caso alguma informação, como o domínio, ou mesmo um número de entrada, não seja igual ao especificado no servidor, no destino ou na ponta que fez a solicitação.  
 
 - 405 Method Not Allowed  
 
     O método especificado no pedido foi compreendido, porem não é permitido pelo endereço que esta recebendo a solicitação.  
 
-- 406 Not Acceptable-  
+- 406 Not Acceptable
 
-    O recurso identificado pelo pedido só é capaz de gerar e completar respostas SIP que possuam características específicas. Não foi aceito conforme o que foi enviado na solicitação. Um bom exemplo disso é solicitar um serviço de SMS para um ponto que não possua tecnologia para isso.  
+    O recurso identificado pelo pedido só é capaz de gerar e completar respostas SIP que possuam características específicas. Não foi aceito conforme o que foi enviado na solicitação. 
+    >Um exemplo disso é solicitar um serviço de SMS para um ponto que não possua tecnologia para isso.  
 
-- 407 Proxy Authentication Required-  
+- 407 Proxy Authentication Required
 
-    Este código é enviado na maioria das vezes por operadoras VOIP, terminações, números de entrada. O motivo geralmente ou é algum bloqueio no Firewall, por parte deles, ou alguma configuração de rede que está bloqueando o solicitante.  
+    Este código é enviado na maioria das vezes por operadoras VOIP, terminações, números de entrada. 
+    >O motivo geralmente ou é algum bloqueio no Firewall, por parte deles, ou alguma configuração de rede que está bloqueando o solicitante.  
     
 - 408 Request Timeout  
 
-    Não foi possível encontrar o usuário a tempo. O servidor não pôde enviar / receber uma resposta dentro de um limite adequado de tempo. Geralmente quando uma rede de um servidor cai, esta é a mensagem dada.  
+    Não foi possível encontrar o usuário a tempo. O servidor não pôde enviar ou receber uma resposta dentro de um limite adequado de tempo. 
+    >Geralmente quando uma rede de um servidor cai, esta é a mensagem dada.  
 
 - 409 Conflict  
 
-    Usuário já esta registrado - Esta mensagem é OBSOLETA. Aparece apenas em versões mais antigas de Sistemas VOIP [ Ex. Asterisk ]   
+    Usuário já esta registrado 
+    >_Esta mensagem é OBSOLETA. Aparece apenas em versões mais antigas de Sistemas VOIP_ ( Ex. Asterisk )   
 
 - 410 Gone  
 
     Era uma vez uma informação que vivia aqui, porem não vive mais.
-    A mensagem informa q sabe q a informação existiu, porém ela não se encontra mais no local.  
+    A mensagem informa que sabe da existencia informação existiu, porém ela não se encontra mais no local.  
 
 - 411 Length Required  
 
