@@ -58,20 +58,17 @@ Para iniciar vamos baixar alguns arquivos que iremos utilizar, como exemplo abai
 
 ```bash
 echo "Baixando primeiro a lista de DDDs UTF-8"
-wget -q https://raw.githubusercontent.com/hebertluiz/guia-ti/main/sources/ddd.csv -O /tmp/ddd.csv
+wget -q https://raw.githubusercontent.com/guia-ti/guia-ti.github.io/main/docs/Arquivos/ddd.csv -O /tmp/ddd.csv
 
 echo "Baixando o script pprint_csv"
-wget -q https://raw.githubusercontent.com/hebertluiz/guia-ti/main/sources/pprint_csv -O /tmp/pprint_csv
-
-echo "Baixando o script pprint_csv.sh"
-wget -q https://gist.githubusercontent.com/hebertluiz/1d83404c1545f4d021ec87fbbafa9aff/raw/1c4227b4a3a89269d2b21bcae24d5a7d0eaba4dd/pprint_csv.sh -O /tmp/pprint_csv.sh
+wget -q https://raw.githubusercontent.com/guia-ti/guia-ti.github.io/main/docs/Arquivos/pprint_csv -O /tmp/pprint_csv
 
 
 # Dando permissões de execução ao arquivo pprint_csv.sh
-chmod +x /tmp/pprint_csv /tmp/pprint_csv.sh
+chmod +x /tmp/pprint_csv /tmp/pprint_csv
 ```
 
-Com os arquivos no `ddd.csv` e `pprint_csv.sh` na pasta `/tmp/` podemos prosseguir. 
+Com os arquivos no `ddd.csv` e `pprint_csv` na pasta `/tmp/` podemos prosseguir. 
 
 
 
@@ -279,7 +276,10 @@ if [ -n "$infile" ]
 then
     if [ -f "$infile" -a -r $infile ]  
     then
-        sed -e 's/[,;]\([,;]\)/ \1/g;' "$infile" | tr -d \"\'\` | column -t -s\;, |less 
+        sed -e 's/[,;]\([,;]\)/ \1/g;' "$infile" \
+            | tr -d \"\'\` \
+            | column -t -s\;, \
+            | less 
         
     else 
         printf -- "ERROR: File does not exists or isn't readable.\n\t"
