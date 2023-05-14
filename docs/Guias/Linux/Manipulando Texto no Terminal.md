@@ -1,8 +1,5 @@
 ---
-layout: post
 title: Manipulando Texto
-permalink: /pages/linux/manipulando-texto
-category: linux
 ---
 
 
@@ -35,9 +32,9 @@ Neste processo iremos usar os arquivos abaixo:
 
 [Lista DDD Brasil](https://www.anatel.gov.br/dadosabertos/PDA/Codigo_Nacional/PGCN.csv) LATIN-1  
 [Lista DDD Brasil](https://raw.githubusercontent.com/hebertluiz/guia-ti/main/pages/sources/ddd.csv) UTF-8  
-[pprint_csv.sh](https://gist.github.com/hebertluiz/1d83404c1545f4d021ec87fbbafa9aff)
+[pprint_csv](https://raw.githubusercontent.com/guia-ti/guia-ti.github.io/main/docs/Arquivos/pprint_csv)
 
-Recomendo também, conhecimento prévio de navegação via terminal em ambiente linux.
+Recomendo também, conhecimento prévio de navegação via terminal em ambiente Linux.
 
 ---  
 
