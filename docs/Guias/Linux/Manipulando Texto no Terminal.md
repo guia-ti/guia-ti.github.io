@@ -1,5 +1,7 @@
 ---
 title: Manipulando Texto
+created: 2023-05-14T19:59:06-03:00
+updated: 2023-05-14T19:59:06-03:00
 ---
 
 
