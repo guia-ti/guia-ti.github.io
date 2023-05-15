@@ -1,7 +1,7 @@
 ---
 title: Introdução de Redes
 created: 2023-05-14T20:09:19-03:00
-updated: 2023-05-14T20:41:56-03:00
+updated: 2023-05-15T10:58:16-03:00
 ---
 tags: #redes #OSI #protocolos
 

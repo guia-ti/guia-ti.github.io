@@ -1,6 +1,6 @@
 ---
 created: 2023-05-14T20:52:15-03:00
-updated: 2023-05-14T21:52:31-03:00
+updated: 2023-05-15T10:58:16-03:00
 title: Inspecionando um Certificado
 tags: [ guia, criptografia, certificado, x509, openssl ]
 ---
