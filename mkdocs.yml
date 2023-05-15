@@ -1,7 +1,12 @@
 site_name: Guia TI
-
+repo_url: https://github.com/guia-ti/guia-ti.github.io
 theme:
+    features:
+      - navigation.sections
+      - navigation.tracking
     name: 'material'
+    icon:
+      logo: material/bookshelf
     palette:
 
     # Light mode
