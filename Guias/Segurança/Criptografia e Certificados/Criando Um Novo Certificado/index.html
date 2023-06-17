@@ -1,0 +1,1136 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../Inspecionando%20um%20Certificado/">
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.16">
+    
+    
+      
+        <title>Criando Um Novo Certificado - Guia TI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.26e3688c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="deep-orange">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#criando-um-novo-certificado" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Guia TI" class="md-header__button md-logo" aria-label="Guia TI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3H9m3 2 4 13 3-1-4-13-3 1M5 5v13h3V5H5M3 19v2h18v-2H3Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guia TI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Criando Um Novo Certificado
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="deep-orange"  aria-label="Mudar para modo escuro"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Mudar para modo escuro" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Mudar para modo Claro"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Mudar para modo Claro" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/guia-ti/guia-ti.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Guia TI" class="md-nav__button md-logo" aria-label="Guia TI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3H9m3 2 4 13 3-1-4-13-3 1M5 5v13h3V5H5M3 19v2h18v-2H3Z"/></svg>
+
+    </a>
+    Guia TI
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/guia-ti/guia-ti.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        Introdução
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Documentação
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Documentação
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          Redes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Redes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Documenta%C3%A7%C3%A3o/Redes/Introdu%C3%A7%C3%A3o%20de%20Redes/" class="md-nav__link">
+        Introdução de Redes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          Segurança
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Segurança
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+          Criptografia
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Criptografia
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Documenta%C3%A7%C3%A3o/Seguran%C3%A7a/Criptografia/Algoritmos%20de%20Chaves/" class="md-nav__link">
+        Introdução Sobre Chaves Criptográficas
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          VoIP Telecom
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          VoIP Telecom
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Documenta%C3%A7%C3%A3o/VoIP%20Telecom/ISDN%20C%C3%B3digos%20de%20Desconex%C3%A3o/" class="md-nav__link">
+        ISDN Codigos de Desconexao
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Documenta%C3%A7%C3%A3o/VoIP%20Telecom/Lista%20de%20C%C3%B3digos%20SIP/" class="md-nav__link">
+        Lista de Códigos SIP
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Guias
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Guias
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          Linux
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Linux
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Linux/Manipulando%20Texto%20no%20Terminal/" class="md-nav__link">
+        Manipulando Texto
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          Segurança
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Segurança
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+          Criptografia e Certificados
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Criptografia e Certificados
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Criptografia e Certificados
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Criando Um Novo Certificado
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Criando Um Novo Certificado
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+    <nav class="md-nav" aria-label="Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-de-certificacao" class="md-nav__link">
+    Estrutura de Certificação
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criando-uma-entidade-certificadora-ca" class="md-nav__link">
+    Criando Uma Entidade Certificadora (CA)
+  </a>
+  
+    <nav class="md-nav" aria-label="Criando Uma Entidade Certificadora (CA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gerando-certificado-raiz-da-ca" class="md-nav__link">
+    Gerando Certificado raiz da CA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracao-para-assinaturas" class="md-nav__link">
+    Configuração Para Assinaturas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gerando-csr" class="md-nav__link">
+    Gerando CSR
+  </a>
+  
+    <nav class="md-nav" aria-label="Gerando CSR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criando-chave-privada" class="md-nav__link">
+    Criando Chave Privada
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criando-configuracao-do-csr" class="md-nav__link">
+    Criando Configuração do CSR
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assinando-o-certificado" class="md-nav__link">
+    Assinando o Certificado
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validando-o-certificado-assinado" class="md-nav__link">
+    Validando o certificado Assinado
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Inspecionando%20um%20Certificado/" class="md-nav__link">
+        Inspecionando um Certificado
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+    <nav class="md-nav" aria-label="Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-de-certificacao" class="md-nav__link">
+    Estrutura de Certificação
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criando-uma-entidade-certificadora-ca" class="md-nav__link">
+    Criando Uma Entidade Certificadora (CA)
+  </a>
+  
+    <nav class="md-nav" aria-label="Criando Uma Entidade Certificadora (CA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gerando-certificado-raiz-da-ca" class="md-nav__link">
+    Gerando Certificado raiz da CA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracao-para-assinaturas" class="md-nav__link">
+    Configuração Para Assinaturas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gerando-csr" class="md-nav__link">
+    Gerando CSR
+  </a>
+  
+    <nav class="md-nav" aria-label="Gerando CSR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criando-chave-privada" class="md-nav__link">
+    Criando Chave Privada
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criando-configuracao-do-csr" class="md-nav__link">
+    Criando Configuração do CSR
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assinando-o-certificado" class="md-nav__link">
+    Assinando o Certificado
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validando-o-certificado-assinado" class="md-nav__link">
+    Validando o certificado Assinado
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="criando-um-novo-certificado">Criando Um Novo Certificado<a class="headerlink" href="#criando-um-novo-certificado" title="Permanent link">&para;</a></h1>
+<h2 id="introducao">Introdução<a class="headerlink" href="#introducao" title="Permanent link">&para;</a></h2>
+<p>Um certificado auto assinado ou Self-signed normalmente é usado em ambientes de teste e desenvolvimento, a sua vantagem se da por não haver custos nem procedimentos dependentes de entidades externas para gerar um certificado utilizável em aplicações ou  autenticação. </p>
+<p>Por mais que seja prático não é recomendável sua utilização pois quebra a cadeia de segurança e não garante que nem a autenticidade nem ao sigilo da conexão. Uma ótima alternativa para um certificado auto assinado é o uso de ferramentas como <a href="https://letsencrypt.org/">Let's Encrypt (letsencrypt.org)</a>.</p>
+<h3 id="estrutura-de-certificacao">Estrutura de Certificação<a class="headerlink" href="#estrutura-de-certificacao" title="Permanent link">&para;</a></h3>
+<p>Para criar um certificado digital no formato X.509 precisamos de um Autoridade Certificadora ou CA (do inglês Certificate Authority) que será o emissor do certificado. Neste caso nós mesmos seremos a CA e o solicitante do Certificado. Para isso precisamos entender a estrutura do processo de certificação, neles usaremos:</p>
+<ul>
+<li>2 Chaves privadas<ul>
+<li>Uma para o Solicitante</li>
+<li>Uma para a CA</li>
+</ul>
+</li>
+<li>1 Certificado raiz(Root CA)</li>
+<li>1 CSR (Certificate Signing Request)</li>
+</ul>
+<p>Iremos usa-los na estrutura abaixo:
+<div class="mermaid">flowchart TB
+    Solicitante -- cria --&gt; Pk[Chave Privada]
+    csr[/CSR/] -- usa --&gt; Pk
+    Solicitante -- cria --&gt; csr
+    CA -- usa --&gt; CaPk[Chave Privada] 
+    CA -- usa --&gt; CArc[\Certificado Raiz\]
+    csr -. envia .-&gt; CA
+    CaPk --&gt; cert&gt;Certificado Solicitado Assinado]
+    CArc --&gt; cert
+    cert ===&gt; Solicitante
+</div></p>
+<h2 id="criando-uma-entidade-certificadora-ca">Criando Uma Entidade Certificadora (CA)<a class="headerlink" href="#criando-uma-entidade-certificadora-ca" title="Permanent link">&para;</a></h2>
+<p>Neste processo iremos utilizar o comando <code>openssl</code> e para manter tudo organizado iremos criar uma pasta chamada <code>certificado</code> na sua pasta de usuário e entraremos nela. Dentro dela criaremos a divisão para a Entidade Certificadora e outra para o solicitante.</p>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>~/certificado
+<span class="nb">cd</span><span class="w"> </span>~/certificado
+
+mkdir<span class="w"> </span><span class="o">{</span>ca,solicitante<span class="o">}</span>
+</code></pre></div>
+<h3 id="gerando-certificado-raiz-da-ca">Gerando Certificado raiz da CA<a class="headerlink" href="#gerando-certificado-raiz-da-ca" title="Permanent link">&para;</a></h3>
+<p>Iremos armazenar todas as configurações num arquivo de texto onde poderemos reutiliza-las posteriormente.</p>
+<p>Entre na pasta <code>ca</code> criada anteriormente e crie um arquivo de texto chamado <code>configCA</code>.
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>ca
+touch<span class="w"> </span>configCA
+</code></pre></div></p>
+<p>Dentro deste arquivo cole o seguinte conteúdo e salve o mesmo.
+<div class="highlight"><pre><span></span><code><span class="c1">## Nome do arquivo a ser gerado (Recomendado não alterar)</span>
+<span class="nv">NOME</span><span class="o">=</span><span class="s2">&quot;RaizCA&quot;</span><span class="w"> </span>
+
+<span class="c1">## Nome para o certificado, </span>
+<span class="c1"># normalmente o domínio do site</span>
+<span class="nv">CN</span><span class="o">=</span><span class="s2">&quot;exemplo.com.br&quot;</span>
+
+<span class="c1">## País </span>
+<span class="nv">PAIS</span><span class="o">=</span><span class="s2">&quot;BR&quot;</span>
+
+<span class="c1">## Cidade</span>
+<span class="nv">LOCALIDADE</span><span class="o">=</span><span class="s2">&quot;Rio de Janeiro&quot;</span>
+
+<span class="c1">## Validade (em dias)</span>
+<span class="nv">VALIDADE</span><span class="o">=</span><span class="s2">&quot;365&quot;</span>
+</code></pre></div></p>
+<p>Voltando ao terminal execute os comandos abaixo para criar o certificado:
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>configCA
+
+openssl<span class="w"> </span>req<span class="w"> </span>-x509<span class="w"> </span>-sha256<span class="w"> </span>-days<span class="w"> </span><span class="nv">$VALIDADE</span><span class="w"> </span>-nodes<span class="w"> </span><span class="se">\</span>
+<span class="w">            </span>-newkey<span class="w"> </span>rsa:2048<span class="w"> </span><span class="se">\</span>
+<span class="w">            </span>-subj<span class="w"> </span><span class="s2">&quot;/CN=</span><span class="si">${</span><span class="nv">CN</span><span class="si">}</span><span class="s2">/C=</span><span class="si">${</span><span class="nv">PAIS</span><span class="si">}</span><span class="s2">/L=</span><span class="si">${</span><span class="nv">LOCALIDADE</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">            </span>-keyout<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$NOME</span><span class="s2">.key&quot;</span><span class="w"> </span>-out<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$NOME</span><span class="s2">.crt&quot;</span>
+</code></pre></div></p>
+<p>Após isso temos 3 arquivos, a configuração, a chave e o certificado Raiz da Entidade Certificadora.
+<img alt="Pasted image 20230526230349.png" src="../Anexos/Pasted%20image%2020230526230349.png" /></p>
+<p>Caso deseje inspecionar seu certificado pode usar o comando abaixo.
+<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>x509<span class="w"> </span>-noout<span class="w"> </span>-text<span class="w"> </span>-in<span class="w"> </span><span class="nv">$NOME</span>.crt<span class="w"> </span><span class="p">|</span><span class="w"> </span>less<span class="w"> </span>
+</code></pre></div>
+<img alt="Pasted image 20230526230549.png" src="../Anexos/Pasted%20image%2020230526230549.png" /></p>
+<h3 id="configuracao-para-assinaturas">Configuração Para Assinaturas<a class="headerlink" href="#configuracao-para-assinaturas" title="Permanent link">&para;</a></h3>
+<p>Essa configuração abaixo irá garantir que os dados do certificados sejam criados conforme desejado.
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>&gt;<span class="w"> </span>cert.conf<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
+<span class="s">authorityKeyIdentifier=keyid,issuer</span>
+<span class="s">basicConstraints=CA:FALSE</span>
+<span class="s">keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment</span>
+<span class="s">EOF</span>
+</code></pre></div></p>
+<h2 id="gerando-csr">Gerando CSR<a class="headerlink" href="#gerando-csr" title="Permanent link">&para;</a></h2>
+<p>Com uma entidade certificadora criada podemos partir para a parte do solicitante. Para isso vamos navegar para o diretório criado anteriormente.
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/certificado/solicitante
+</code></pre></div></p>
+<h3 id="criando-chave-privada">Criando Chave Privada<a class="headerlink" href="#criando-chave-privada" title="Permanent link">&para;</a></h3>
+<p>Para criar a chave privada iremos utilizar uma chave RSA com 2048 bits, o comando abaixo irá criar um arquivo chamado <code>solicitante.key</code>.
+<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>genrsa<span class="w"> </span>-out<span class="w"> </span>solicitante.key<span class="w"> </span><span class="m">2048</span>
+</code></pre></div></p>
+<h3 id="criando-configuracao-do-csr">Criando Configuração do CSR<a class="headerlink" href="#criando-configuracao-do-csr" title="Permanent link">&para;</a></h3>
+<p>O comando abaixo irá criar um arquivo com a configuração para gerar um novo certificado. Caso deseje poderá alterar os dados e parâmetros da solicitação para que atendam as necessidades do seu ambiente nas seções <code>dn</code> e <code>alt_names</code>.</p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>&gt;<span class="w"> </span>csr.conf<span class="w"> </span><span class="s">&lt;&lt;EOF </span>
+<span class="s">[ req ] </span>
+<span class="s">default_bits = 2048 </span>
+<span class="s">prompt = no </span>
+<span class="s">default_md = sha256 </span>
+<span class="s">req_extensions = req_ext </span>
+<span class="s">distinguished_name = dn </span>
+
+<span class="s">[ dn ] </span>
+<span class="s">C = BR </span>
+<span class="s">ST = São Paulo </span>
+<span class="s">L = São Paulo </span>
+<span class="s">O = Minha Organização </span>
+<span class="s">OU = Meu Setor </span>
+<span class="s">CN = meudominio.com.br </span>
+
+<span class="s">[ req_ext ] </span>
+<span class="s">subjectAltName = @alt_names </span>
+
+<span class="s">[ alt_names ] </span>
+<span class="s">DNS.1 = meudominio.com.br </span>
+<span class="s">DNS.2 = www.meudominio.com.br </span>
+<span class="s">IP.1 = 10.1.1.10</span>
+<span class="s">IP.2 = 192.168.1.10 </span>
+<span class="s">EOF</span>
+</code></pre></div>
+<p>Edite o arquivo para ajustar os parâmetros, para os campos da seção <code>alt_names</code> podem ser criadas novas entradas para domínios e endereços IP, só é preciso seguir o padrão <code>DNS.n</code> ou  <code>IP.n</code> onde <code>n</code> é o número da entrada, a primeira entrada deve ser a de número 1. Um exemplo abaixo da seção com 3 endereços IP e um domínio.
+<div class="highlight"><pre><span></span><code><span class="k">[ alt_names ]</span>
+<span class="na">DNS.1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">guia-ti.hev.dev.br</span>
+<span class="na">IP.1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">10.1.1.10</span>
+<span class="na">IP.2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">10.2.1.10</span>
+<span class="na">IP.3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">10.3.1.10</span>
+</code></pre></div></p>
+<p>Com a configuração criada vamos usar o comando abaixo para gerar uma Solicitação de Assinatura de Certificado (CSR).
+<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>req<span class="w"> </span>-new<span class="w"> </span>-key<span class="w"> </span>solicitante.key<span class="w"> </span>-out<span class="w"> </span>solicitante.csr<span class="w"> </span>-config<span class="w"> </span>csr.conf
+</code></pre></div></p>
+<p>Na pasta devemos ter agora três arquivos, <code>csr.conf</code>, <code>solicitante.key</code> e <code>solicitante.csr</code>.</p>
+<h2 id="assinando-o-certificado">Assinando o Certificado<a class="headerlink" href="#assinando-o-certificado" title="Permanent link">&para;</a></h2>
+<p>Com os dados anteriores gerados e a CSR com os dados ajustados podemos gerar o certificado com o comando abaixo.
+<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>x509<span class="w"> </span>-req<span class="w"> </span>-in<span class="w"> </span>solicitante.csr<span class="w"> </span>-CA<span class="w"> </span>../ca/<span class="nv">$NOME</span>.crt<span class="w"> </span><span class="se">\</span>
+<span class="w">            </span>-CAkey<span class="w"> </span>../ca/<span class="nv">$NOME</span>.key<span class="w"> </span>-CAcreateserial<span class="w"> </span>-out<span class="w"> </span>solicitante.crt<span class="w"> </span><span class="se">\</span>
+<span class="w">            </span>-days<span class="w"> </span><span class="nv">$VALIDADE</span><span class="w"> </span>-sha256<span class="w"> </span>-extfile<span class="w"> </span>../ca/cert.conf<span class="w"> </span><span class="se">\</span>
+<span class="w">            </span>-copy_extensions<span class="w"> </span>copy
+</code></pre></div>
+<img alt="Pasted image 20230527000133.png" src="../Anexos/Pasted%20image%2020230527000133.png" /></p>
+<h2 id="validando-o-certificado-assinado">Validando o certificado Assinado<a class="headerlink" href="#validando-o-certificado-assinado" title="Permanent link">&para;</a></h2>
+<p>Para confirmar os dados do certificado assinado pode usar o comando abaixo.
+<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>x509<span class="w"> </span>-noout<span class="w"> </span>-text<span class="w"> </span>-in<span class="w"> </span>solicitante.crt<span class="w"> </span><span class="p">|</span><span class="w"> </span>less<span class="w"> </span>
+</code></pre></div>
+<img alt="Pasted image 20230526234008.png" src="../Anexos/Pasted%20image%2020230526234008.png" /></p>
+<p>Depois desta etapa poderá utilizar o conjunto de chave e certificados do solicitante em sua aplicação. Lembre-se bem que a chave privada deve sempre ser armazenada de forma segura.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.sections", "navigation.tracking"], "search": "../../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.a51614de.min.js"></script>
+      
+        
+          <script src="../../../../javascripts/mathjax.js"></script>
+        
+      
+        
+          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        
+      
+        
+          <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+      
+        
+          <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        
+      
+    
+  </body>
+</html>
