@@ -1,6 +1,6 @@
 ---
 created: 2023-05-14T20:02:31-03:00
-updated: 2023-05-15T10:58:16-03:00
+updated: 2023-06-17T16:18:57-03:00
 ---
 # Introdução Sobre Chaves Criptográficas 
 
@@ -23,13 +23,6 @@ flowchart TD
     B --> PUB("🔑 Pública de A")
     B --> PRIV("🔑 Privada de A")
 
-classDef user fill:#22227b
-
-classDef priv fill:#7b2222
-classDef pub  fill:#227b22
-class USR user
-class PUB pub
-class PRIV priv
 ```
 
 ### Utilização de Chaves Assimétricas  

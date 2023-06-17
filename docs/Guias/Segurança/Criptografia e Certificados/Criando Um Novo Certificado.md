@@ -1,6 +1,6 @@
 ---
 created: 2023-05-14T20:52:15-03:00
-updated: 2023-05-26T23:40:02-03:00
+updated: 2023-06-17T16:17:28-03:00
 title: Criando Um Novo Certificado
 tags: [ guia, criptografia, certificado, x509, openssl ]
 ---
@@ -35,14 +35,6 @@ flowchart TB
     CaPk --> cert>Certificado Solicitado Assinado]
     CArc --> cert
     cert ===> Solicitante
-
-style Solicitante fill:#007B00 
-style CA fill:#7B0000
-style Pk fill:#7b7b00
-style CaPk fill:#FF6B6B,color:#292F36
-style cert fill:#292F36
-style csr fill:#007b88
-style CArc fill:#D3A9A7,color:#292F36
 
 ```
 
